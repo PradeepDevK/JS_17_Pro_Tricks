@@ -82,3 +82,36 @@ console.log((num1 ^ 98));
 /**
  * Loop over an object
  */
+const age = {
+    anne: 22,
+    max: 16
+};
+
+// Solution 1 - Get 'Keys' and loop over
+const keyArr = Object.keys(age);
+keyArr.forEach(key => age[key]++);
+console.log(age);
+
+// Solution 2 - for ...in loop
+for (let key in age) {
+    age[key]++;
+}
+console.log(age);
+
+/**
+ * Object key are stored in inserted order
+ */
+const obj2 = {
+    name: "anne",
+    age: 22,
+    address: "earth",
+    profession: "farmer"
+};
+console.log(Object.keys(obj2));
+
+/**
+ * Check if type is Array
+ */
+const arr2 = [1, 2, 3];
+console.log(typeof arr2);
+console.log(Array.isArray(arr2));
