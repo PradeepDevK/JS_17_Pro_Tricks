@@ -115,3 +115,19 @@ console.log(Object.keys(obj2));
 const arr2 = [1, 2, 3];
 console.log(typeof arr2);
 console.log(Array.isArray(arr2));
+
+/**
+ * null vs undefined
+ */
+const fn = ( x = "default message") => console.log(x);
+fn(undefined);
+fn();
+fn(null);
+
+/**
+ * Initialize an array of size n and fill with default values
+ */
+const size = 5;
+const defaultValue = 0;
+const arr4 = Array(size).fill(defaultValue);
+console.log(arr4);
